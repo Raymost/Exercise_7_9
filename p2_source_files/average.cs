@@ -2,30 +2,27 @@ using System;
 
 public class Average
 {
-
     public static void Main()
     {
-        double a = 0, b, c = 0, d;
-        string s;
+        double number1 = 0, number2, number3 = 0, average;
+        string mark;
 
         Console.Write("Insert a mark: ");
-        s = Console.ReadLine();
+        mark = Console.ReadLine();
 
-        // if the mark isn't an end then we pass it to double to work with it 
-        while (s != "end")
+        while (mark != "end")
         {
-            b = Convert.ToDouble(s);
-            c++;
-            a += b;
+            number2 = Convert.ToDouble(s);
+            number3++;
+            number1 += number2;
             Console.Write("Insert a mark: ");
-            s = Console.ReadLine();
+            mark = Console.ReadLine();
         }
 
-        if (c != 0)
+        if (number3 != 0)
         {
-            //calculate the average 
-            d = a / c;
-            Console.WriteLine("The average is {0}.", d);
+            average = number1 / number3;
+            Console.WriteLine("The average is {0}.", average);
         }
     }
 }

@@ -8,33 +8,33 @@ class digits
 {
     static void Main()
     {
-        int a = 0, b = 0, c = 0, d = 0;
+        int digit1 = 0, digit2 = 0, digit3 = 0, digit4 = 0;
 
         Console.Write("Insert a number: ");
-        string e = Console.ReadLine();
+        string number = Console.ReadLine();
 
-        while (e != "end")
+        while (number != "end")
         {
-            int input = Convert.ToInt32(e);
+            int input = Convert.ToInt32(number);
             if (input != 0)
             {
 
                 if (input / 10 == 0)
-                    a++;
+                    digit1++;
                 else
                 if (input / 100 == 0)
-                    b++;
+                    digit2++;
                 else
                 if (input / 1000 == 0)
-                    c++;
+                    digit3++;
                 else
-                    d++;
+                    digit4++;
             }
 
-            e = Console.ReadLine();
+            number = Console.ReadLine();
         }
 
-        Console.WriteLine("one: {0} two: {1} three: {2} more: {3}", a, b, c, d);
+        Console.WriteLine("one: {0} two: {1} three: {2} more: {3}", digit1, digit2, digit3, digit4);
 
     }
 }
