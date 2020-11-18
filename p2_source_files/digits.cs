@@ -1,15 +1,16 @@
 using System;
 
+/* Counters of number of digits a is for one digit,
+ * b is for 2 digits, c is for 3 digits and d is for more than 3 digits
+ */
+
 class digits
 {
     static void Main()
     {
-        //counters of number of digits a is for one digit, b is for 2 digits, c is for 3 digits and d is for more than 3 digits
         int a = 0, b = 0, c = 0, d = 0;
 
         Console.Write("Insert a number: ");
-
-        // read the number as string to check the word "end"
         string e = Console.ReadLine();
 
         while (e != "end")
@@ -19,18 +20,14 @@ class digits
             {
 
                 if (input / 10 == 0)
-                    // it only has one digit 
                     a++;
                 else
                 if (input / 100 == 0)
-                    // the number has 2 digits 
                     b++;
                 else
                 if (input / 1000 == 0)
-                    // the number has 3 digits 
                     c++;
                 else
-                    // the number has more than 3 digits
                     d++;
             }
 
